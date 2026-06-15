@@ -1,0 +1,147 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #d3ad73;
+}
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 1.5em;
+    
+}
+.highlight{
+    text-decoration: underline;
+    font-size: 20px;
+    background-color: azure;
+    padding : 5px;
+}
+.toplinks{
+    background-color: #373737;
+    overflow: hidden;
+   
+}
+.toplink-right{
+    float: right;
+}
+.toplinks a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display : block;
+    font-size: 17px;
+}
+.toplinks a:hover{
+    background-color: #f2f2f2;
+    color: #373737;
+    text-decoration: none;
+}
+.banner{
+    background-color: antiquewhite;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.content{
+    float: left;
+    width: 70%;
+    padding: 20px;
+
+}
+.sidebar{
+    float :left;
+    width: 30%;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+
+}
+@media  screen and (max-width: 900px){
+    .content, sidebar {
+        width: 100%;
+        float: none;
+        border-bottom: none;
+    }
+}
+.sidebar a{
+  
+    color: #936363;
+    text-decoration: none;
+}
+.sidebar a:hover{
+  
+    text-decoration: underline;
+}
+    
+
+.footer{
+    background-color: beige;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+table{
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #373737;
+    margin: 20px auto;
+}
+table th{
+    border: 1px solid #373737;
+    background-color: #d6d6d6;
+    padding: 8px;
+    text-align: left;
+}
+table td{
+    border: 1px solid #373737;
+    padding: 8px;
+    text-align: left;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+tr:hover{
+    background-color: #99f19d;
+}
+.team_img{
+    overflow: hidden;
+    text-align: center;
+}
+.team_img img{
+    width: 180px;
+    height: auto;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+.team_member{
+    display: inline-block;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: small;
+    color: #83dcff;
+}
+.contact-form input[type="submit"]
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ce9d68;
+}

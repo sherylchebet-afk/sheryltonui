@@ -1,0 +1,23 @@
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>   
+
+    <body>
+        <script>
+            var today = new Date();
+            var day = today.getDate();
+            var month = today.getMonth() + 1; // Months are zero-based
+            var year = today.getFullYear();
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+            var seconds = today.getSeconds();
+            var weekday = today.getDay(); // 0 (Sunday) to 6 (Saturday)
+            var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            weekday =  weekdays[weekday];
+            document.write("Today's date is: " + month + "/" + day + "/" + year + "<br>");
+            document.write("Current time is: " + hours + ":" + minutes + ":" + seconds + "<br>");
+            document.write("Today is: " + today.toDateString() + "<br>");
+        </script>
+    </body>

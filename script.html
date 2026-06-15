@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+    <br>
+    <script>
+        document.write(7+5); 
+    </script>
+    <button type="button" onclick="document.getElementById('bulb').src='C:\\Users\\User\\OneDrive\\Desktop\\WEB DEV PROJECTS\\Assignment_II\\IMAGES\\bulb_on.jpg'">Turn On</button>
+    <img id="bulb" src="C:\Users\User\OneDrive\Desktop\WEB DEV PROJECTS\Assignment_II\IMAGES\bulb_off.jpg" alt="W3Schools.com" style="width: 300px">
+    <script>
+        window.alert("Hello, World!");
+    </script>
+    <br>
+    <a href="#" onclick="return confirm('Do you want to be here??')">Click me</a>
+    <script>
+        console.log("Hello Console!");
+    </script>
+    <br>
+    <script>
+        let x = 5;
+        let y = 10;
+        let z = x + y;
+        document.write("The sum is: " + z);
+        let fullname = "John Doe";
+        let age = 30;
+        document.write("<br>My name is: " + fullname+ "<br>My age is: " + age);
+         const marks=95;
+        document.write("<br>My marks are: " + marks);
+        let fruits= ["Apple", "Banana", "Cherry"];
+        document.write("My favorite fruits are: " + fruits[0] + ", " + fruits[1] + ", and " + fruits[2]);
+        
+
+        let food=prompt("Enter a food item:");
+        if (fruits.includes(food)) {
+            document.write("<br>" + food + " is a fruit.");
+        } else {
+            document.write("<br>" + food + " is not a fruit.");
+        }
+        
+        function greetings(name) {
+            let name = prompt("Enter your name:");
+            return "Hello, " + name + "!";
+            var today= new Date();
+            var hours=today.getHours();
+             if (hours < 12) {
+                document.write("<br>Good morning!");
+
+        } 
+        else if (hours < 18) {
+            document.write("<br>Good afternoon!");
+        } else {
+            document.write("<br>Good evening!");
+        } 
+        let i=1;
+        while (i <=5) {
+            document.write("<br>Number: " + i);
+            i++;}  
+        let j=7;
+        do{
+            document.write("<br>Number: " + j);
+        }
+          while (j<=13)
+        {
+            document.write("<br>Number: " + j);
+            j+=2;}
+            
+        }  
+        for(let k=12; k <=23; k+=2)
+        {
+            document.write(k + "<br>");
+
+        }
+        let languages = ["JavaScript", "Python", "Java", "C++"];
+        for (let language of languages)
+        {
+            document.write(language + "<br>");
+   }
+       let user = {
+            name: "Alice",
+            age: 28,
+            city: "New York"
+        };
+        for (let detail in user) {
+            document.write(detail + ": " + user[detail] + "<br>");
+        }
+        
+        
+
+    </script>
+</body>
+</html>

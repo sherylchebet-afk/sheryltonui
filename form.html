@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body>
+        <p>Please register below: </p>
+        <form id="form1">
+            First Name: <input type="text" id="firstName" name="firstName" required><br><br>
+            Last Name: <input type="text" id="lastName" name="lastName" required><br><br>
+            Email: <input type="email" id="email" name="email" required><br><br>
+            <button type="submit">Submit</button>
+            <button type="Reset">Reset</button>
+        
+        
+        </form>
+        <script>
+            document.getElementById('form1').addEventListener('submit', function(event) {
+                onclick = alert("Form submitted successfully!");
+            });
+
+        </script>
+
+    </body>
+</html>
